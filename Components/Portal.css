@@ -1,0 +1,106 @@
+.portal_main_div {
+    background-color: #09152C;
+    position: relative;
+    overflow: hidden;
+}
+.portal_main_div::after {
+    content: "";
+    background-color: rgba(39, 107, 243, 1);
+    position: absolute;
+    height: 160px;
+    width: 100%;
+    transform: rotate(1deg);
+    bottom: -120px;
+}
+.portal_logo {
+    position: relative;
+    border-left: 1px solid #465A7E;
+    left: -30px;
+    height: 140px;
+}
+.portal_logo::after {
+    content: "";
+    background-color: rgba(39, 107, 243, 1);
+    position: absolute;
+    height: 50px;
+    width: 2px;
+    top: 0px;
+    left: -2px;
+}
+.portal_img {
+    position: relative;
+    z-index: 2;
+}
+.portal_img::before {
+    content: "";
+    background-image: url("./Blue_tube.png");
+    position: absolute;
+    height: 290px;
+    width: 290px;
+    top: -110px;
+    left: -190px;
+}
+.portal_img::after {
+    content: "";
+    background-image: url("./Green_tube.png");
+    position: absolute;
+    height: 264px;
+    width: 264px;
+    bottom: -120px;
+    right: 40px;
+    z-index: -1;
+}
+.P-h2 {
+    color: #465A7E;
+    font-size: 20px;
+}
+.P-h1 {
+    color: #FFFFFF;
+}
+.P-h5 {
+    color: #FFFFFF;
+    font-size: 15px;
+    margin: 25px 10px;
+}
+.Portal-p {
+    color: gray;
+    font-size: 18px;
+}
+.P-btn {
+    background-color: #276BF3;
+    color: white;
+    font-weight: 600;
+    padding: 20px;
+    border-radius: 10px;
+}
+.P-h3 {
+    color: gainsboro;
+    font-size: 23px;
+}
+.P-P {
+    color: gray;
+    font-size: 20px;
+}
+
+@media(max-width:820px) {
+    .portal_div {
+        text-align: center;
+    }
+   .P-btn-div{
+    justify-content: center;
+   }
+   .portal_logo_1{
+     text-align: center;
+   }
+   .portal_logo {
+   width: fit-content;
+   margin: auto;
+}
+   
+}
+@media(max-width:575px){
+    .P-h5 {
+        margin:20px 7px;
+      }
+
+}

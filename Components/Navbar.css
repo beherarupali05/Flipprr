@@ -1,0 +1,39 @@
+.navbar {
+    background-color: #276BF3;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#menu_btn_div {
+    display: flex;
+}
+
+.nav-link {
+    color: white;
+}
+
+#menu_btn_1 {
+    color: white;
+    background-color: #276BF3;
+    border-color: #5B92FF;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 10px;
+    background: transparent;
+    width: 150px;
+}
+
+#menu_btn_2 {
+    color: white;
+    background-color: #2363E3;
+    border-color: #5B92FF;
+    border-radius: 10px;
+    box-shadow: none;
+    padding: 10px;
+    width: 150px;
+    margin-left: 10px;
+}

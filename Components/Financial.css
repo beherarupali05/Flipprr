@@ -1,0 +1,296 @@
+.Financial_main_div {
+    background-color: whitesmoke;
+}
+
+#financial_header {
+    font-size: 40px;
+    font-weight: 700;
+    color: #09152C;
+    max-width: fit-content;
+    margin: auto;
+    position: relative;
+}
+
+#financial_header::after {
+    content: "";
+    background-image: url("./Platonic_1.png");
+    position: absolute;
+    height: 150px;
+    width: 150px;
+    top: -10px;
+    right: -90px;
+}
+
+.card {
+    background-color: white;
+    border-radius: 40px;
+}
+
+.card-title {
+    font-weight: bold;
+
+    font-size: 23px;
+}
+
+.card-text {
+    color: rgba(39, 107, 243, 1);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.first_card {
+    position: relative;
+}
+
+.first_card::before {
+    content: "";
+    background-image: url("./Vector_1.png");
+    position: absolute;
+    height: 194px;
+    width: 120px;
+    left: -80px;
+    top: 190px;
+}
+
+
+.Financial_div {
+    background-color: #DCE2E5;
+    border-radius: 40px;
+}
+
+.cashback_div_logo {
+    position: relative;
+    z-index: 2;
+}
+
+.cashback_div_logo::after {
+    content: "";
+    background-image: url("./Blue_circle.png");
+    position: absolute;
+    height: 180px;
+    width: 180px;
+    top: 105px;
+    right: -50px;
+    z-index: -2;
+}
+
+.cashback_div_logo::before {
+    content: "";
+    background-image: url("./Violet_circle.png");
+    position: absolute;
+    height: 116px;
+    width: 116px;
+    top: 100px;
+    right: -40px;
+    z-index: -1;
+}
+
+.shop_div_logo {
+    position: relative;
+    z-index: 2;
+}
+
+.shop_div_logo::before {
+    content: "";
+    background-color: rgba(110, 31, 237, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(-13deg);
+    top: 150px;
+    z-index: -1;
+}
+
+.shop_div_logo::after {
+    content: "";
+    background-color: rgba(255, 177, 134, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(-13deg);
+    top: 180px;
+    left: -10px;
+    z-index: -2;
+
+}
+
+.shop_img {
+    position: relative;
+}
+
+.shop_img::after {
+    content: "";
+    background-color: rgba(255, 177, 134, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(-13deg);
+    bottom: 30px;
+    right: 0px;
+    z-index: -2;
+
+}
+
+.shop_img::before {
+    content: "";
+    background-color: rgba(110, 31, 237, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(-13deg);
+    bottom: 50px;
+    right: -5px;
+    z-index: -1;
+}
+
+.F-h1 {
+    color: #09152C;
+    font-weight: bold;
+}
+
+.F-p {
+    color: #09152C99;
+    font-size: 20px;
+}
+
+.F-h2 {
+    color: #276BF3;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.g-h1 {
+    color: rgba(255, 255, 255, 1);
+    font-size: 35px;
+
+}
+
+.g-p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.gift_main_div {
+    background: linear-gradient(#60D5FA, #276BF3);
+    border-radius: 40px;
+    position: relative;
+
+}
+
+.gift_logo {
+    position: relative;
+    z-index: 2;
+}
+
+.gift_logo::before {
+    content: "";
+    background-image: url("./Sphere.png");
+    position: absolute;
+    height: 540px;
+    width: 540px;
+    top: -40px;
+    left: -180px;
+    z-index: -1;
+}
+
+.gift_main_div::after {
+    content: "";
+    background-image: url("./Platonic_7.png");
+    position: absolute;
+    height: 112px;
+    width: 113px;
+    right: -50px;
+    bottom: 50px;
+}
+
+.gift-p {
+    color: #9BE7FF;
+}
+
+.G_btn {
+    background-color: #09152C;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    padding: 6px;
+}
+
+.G_btn_div {
+    display: flex;
+}
+
+#G-second-btn {
+    margin-left: 10px;
+}
+
+@media(max-width:820px) {
+    .card {
+        margin-top: 30px;
+    }
+
+    .F-h1 {
+        text-align: center;
+    }
+
+    .F-p {
+        text-align: center;
+    }
+
+    .F-h2 {
+        text-align: center;
+    }
+
+    .recharge_div,
+    .third_div,
+    .cashback_div,
+    .shop_div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gift_div {
+        text-align: center;
+    }
+
+}
+
+
+@media(max-width:575px) {
+    #financial_header {
+        text-align: center;
+    }
+    #financial_header::after {
+        margin-right: 90px;
+        margin-top: -15px;
+    }
+
+    .cashback_div_logo::after {
+        right: 0px;
+    }
+
+    .cashback_div_logo::before {
+        right: 0px;
+    }
+
+    .shop_img::after {
+        right: 10px;
+    }
+
+    .shop_img::before {
+        right: 10px;
+    }
+
+    .gift_main_div::after {
+        right: -10px;
+    }
+
+    #G-second-btn {
+        margin-top: 10px;
+        margin-left: 3px;
+    }
+
+    .F-h2 {
+        padding: 11px;
+    }
+
+}

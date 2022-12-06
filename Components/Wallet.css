@@ -1,0 +1,182 @@
+.wallet_main_div {
+    background-color: whitesmoke;
+    position: relative;
+}
+
+.F_btn {
+    background-color: #09152C;
+    color: white;
+    border-radius: 10px;
+    width: auto;
+    padding: 6px;
+}
+
+.wallet_div_2::before {
+    content: "";
+    background-color: rgba(255, 177, 134, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(-20deg);
+    right: 120px;
+    bottom: -40px;
+    z-index: 0;
+}
+
+.wallet_div_2::after {
+    content: "";
+    background-color: rgba(110, 31, 237, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(-20deg);
+    right: 130px;
+    bottom: -60px;
+    z-index: 0;
+}
+
+.wallet-h1 {
+    font-weight: bold;
+    max-width: fit-content;
+    margin: auto;
+}
+
+.W-h1 {
+    color: white;
+}
+
+.w-p {
+    color: whitesmoke;
+}
+
+.wallet_card {
+    background-color: white;
+    border-radius: 30px;
+}
+
+.wallet_first_card {
+    position: relative;
+    z-index: 2;
+}
+
+.wallet_first_card::before {
+    content: "";
+    background-image: url("./Cone.png");
+    position: absolute;
+    height: 394px;
+    width: 393px;
+    left: -190px;
+    top: -90px;
+    z-index: -1;
+}
+
+
+.last_main_div {
+    z-index: 4;
+}
+
+.last_div {
+    background-color: #09152C;
+    background-image: url("./Hand2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-radius: 35px;
+    line-height: 30px;
+    position: relative;
+}
+
+.last_div::before {
+    content: "";
+    background-color: rgba(110, 31, 237, 1);
+    position: absolute;
+    -webkit-clip-path: polygon(0 26%, 31% 75%, 76% 100%, 0 100%);
+    clip-path: polygon(0 26%, 31% 75%, 76% 100%, 0 100%);
+    border-radius: 35px;
+    height: 190px;
+    width: 199px;
+    bottom: 0;
+    left: 0;
+}
+
+.last_div::after {
+    content: "";
+    background-color: rgba(39, 107, 243, 1);
+    position: absolute;
+    -webkit-clip-path: polygon(20% 0%, 100% 0, 100% 80%, 75% 31%);
+    clip-path: polygon(20% 0%, 100% 0, 100% 80%, 75% 31%);
+    border-radius: 35px;
+    height: 190px;
+    width: 199px;
+    top: 0;
+    right: -1px;
+}
+
+.last_main_div {
+    position: relative;
+    z-index: 2;
+}
+
+.last_main_div::after {
+    content: "";
+    background-color: rgba(110, 31, 237, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(18deg);
+    top: 35px;
+    left: -0px;
+    z-index: -1;
+}
+
+.last_main_div::before {
+    content: "";
+    background-color: rgba(255, 177, 134, 1);
+    position: absolute;
+    height: 190px;
+    width: 190px;
+    transform: rotate(18deg);
+    top: 50px;
+    left: -20px;
+    z-index: -2;
+}
+
+.W_btn {
+    background-color: #1D2940;
+    color: white;
+    border-radius: 10px;
+    border-style: none;
+    width: auto;
+    ;
+    padding: 6px;
+}
+
+
+@media(max-width:820px) {
+    .wallet_div {
+        text-align: center;
+    }
+
+    .wallet_card {
+        margin: 0px 30px;
+    }
+}
+
+@media(max-width:575px) {
+    .wallet_card {
+        margin: 0px 5px;
+    }
+
+    .wallet-h1 {
+        text-align: center;
+    }
+
+    .W-h1 {
+        text-align: center;
+    }
+
+    .last_div {
+        background-blend-mode: darken;
+        text-align: center;
+    }
+}
